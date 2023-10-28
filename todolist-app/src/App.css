@@ -1,0 +1,28 @@
+/* Import Tailwind CSS styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* src/App.css */
+
+/* ... (your existing styles) */
+
+/* Apply Tailwind CSS classes to elements */
+.App {
+  /* Tailwind CSS classes for margin and padding */
+  margin: 0 auto;
+  max-width: 28rem; /* Tailwind CSS class for max-width */
+
+  /* Other custom styles */
+  /* ... */
+}
+
+/* Apply Tailwind CSS classes to specific elements */
+.flex-container {
+  display: flex;
+  /* Tailwind CSS classes for flex layout */
+  justify-content: space-between;
+  align-items: center;
+}
+
+
