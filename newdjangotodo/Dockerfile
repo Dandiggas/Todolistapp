@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 WORKDIR /app/newdjangotodo
 
-COPY ./requirements.txt /app/newdjangotodo/
+COPY ./newdjangotodo/requirements.txt /app/newdjangotodo/
 
 # Build psycopg2-binary from source -- add required required dependencies
 RUN apk add --virtual .build-deps --no-cache postgresql-dev gcc python3-dev musl-dev && \
