@@ -33,6 +33,7 @@ jobs:
     - name: Build, tag, and push image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        REGISTRY_ALIAS: diggas
         ECR_REPOSITORY: todobackend
         IMAGE_TAG: latest
       run: |
