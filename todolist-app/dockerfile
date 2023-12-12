@@ -2,9 +2,9 @@ FROM node:16-alpine
 
 WORKDIR /app/todolist-app/
 
-COPY package*.json /app/todolist-app/
+COPY ./todolist-app/package*.json /app/todolist-app/
 RUN npm install
 
-COPY . /app/todolist-app/
+COPY ./todolist-app/ /app/todolist-app/
 
 CMD ["npm", "start"]
