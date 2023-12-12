@@ -15,9 +15,9 @@ function App() {
   return <BrowserRouter>
     <Navbar/>
      <Routes>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Registration/>}/>
-        <Route path='/todos' element={<Todo/>}/>
+        <Route path='login' element={<Login/>}/>
+        <Route path='register' element={<Registration/>}/>
+        <Route path='todos' element={<Todo/>}/>
      </Routes>
   </BrowserRouter>
   

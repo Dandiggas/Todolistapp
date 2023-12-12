@@ -13,7 +13,7 @@ export const Login = () => {
   const submit = async (e: SyntheticEvent) => {
     e.preventDefault();
 
-    const response =  await axios.post('http://localhost:8000/api/login', {
+    const response =  await axios.post('http://3.84.177.200:8000/api/login', {
       email,
       password
   }, {withCredentials: true});

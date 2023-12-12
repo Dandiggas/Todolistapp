@@ -3,6 +3,7 @@ version: '3.9'
 
 services:
   db:
+    container_name: db
     image: postgres:14-alpine
     ports:
       - '5432:5432'
@@ -21,7 +22,7 @@ services:
       dockerfile: Dockerfile
 
     ports:
-      - '3000:3000'
+      - '80:3000'
 
     volumes:
       - ./todolist-app:/app/todolist-app
@@ -30,6 +31,7 @@ services:
       - backend
 
   backend: 
+    container_name: backend
     build: 
       context: ./newdjangotodo
       dockerfile: Dockerfile
